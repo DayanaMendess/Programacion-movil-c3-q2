@@ -69,5 +69,11 @@ Componente de CRUD
 evidencia 1
 ![Evidencia 1 componente](c:\Users\ASUS\Videos\Captures\imag.png)
 
+evidencia 2
+![Evidencia 2 componente](c:\Users\ASUS\Videos\Captures\imag.png.png)
+
+evidencia
+![Evidencia 3 componente](c:\Users\ASUS\Videos\Captures\imgen.png.png)
+
 
 
