@@ -3,10 +3,10 @@
 Este documento describe los componentes principales de la página "Universidad", junto con sus propiedades, propósitos y estilos personalizados.
 
 
-
+ 
 ## Código Completo de la Página
 
-# Componente 1
+# Componente 1.
 
 ```js 
 <!-- Contenido principal -->
