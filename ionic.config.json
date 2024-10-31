@@ -1,0 +1,7 @@
+{
+  "name": "programacion-movil",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
