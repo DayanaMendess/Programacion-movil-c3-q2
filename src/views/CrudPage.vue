@@ -97,7 +97,7 @@
   
   /* Clase de sección para margen entre componentes */
   .section {
-    margin-bottom: 24px;
+    margin-bottom: 400px;
   }
   
   /* Estilos para la tarjeta CRUD */
