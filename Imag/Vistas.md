@@ -16,9 +16,7 @@ Componente de CRUD
           <ion-button @click="deleteItem" color="danger">Eliminar</ion-button>
         </ion-card-content>
       </ion-card>
-```
 
-```js
       <!-- Componente de Formulario de Registro -->
       <ion-card class="form-card section">
         <ion-card-header>
@@ -31,9 +29,7 @@ Componente de CRUD
           <ion-button expand="block" color="primary" @click="submitForm">Registrar</ion-button>
         </ion-card-content>
       </ion-card>
-```
 
-```js
       <!-- Componente de Estadísticas -->
       <ion-card class="stats-card section">
         <ion-card-header>
@@ -70,15 +66,13 @@ Componente de CRUD
 </template>
 
 ```
-
-
 evidencia 1
 ![Evidencia 1 componente](c:\Users\ASUS\Videos\Captures\imag.png)
 
 evidencia 2
 ![Evidencia 2 componente](c:\Users\ASUS\Videos\Captures\imag.png.png)
 
-evidencia 3
+evidencia
 ![Evidencia 3 componente](c:\Users\ASUS\Videos\Captures\imgen.png.png)
 
 
