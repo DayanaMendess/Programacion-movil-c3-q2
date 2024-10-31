@@ -6,29 +6,30 @@ Este documento describe los componentes principales de la página "Universidad",
  
 ## Código Completo de la Página
 
-# Componente 1.
+# Componente 1 Contenido principal
 
 ```js 
+
 <!-- Contenido principal -->
     <ion-content :fullscreen="true" class="content-container">
 
 ```
-# Componente 2
+# Componente 2 Barra de búsqueda 
  ```js     
       <!-- Barra de búsqueda -->
       <ion-searchbar class="spaced-item" color="primary" placeholder="Buscar"></ion-searchbar>
 ```
-# Componente 3
+# Componente 3 Entrada de usuario
 ```js
       <!-- Entrada de usuario -->
       <ion-input class="spaced-item" label="Usuario" label-placement="floating" fill="solid" placeholder="Ingrese usuario"></ion-input>
 ```
-# Componente 4
+# Componente 4 Entrada de contraseña
 ```js
       <!-- Entrada de contraseña -->
       <ion-input class="spaced-item" label="Contraseña" label-placement="floating" fill="outline" placeholder="Ingrese contraseña"></ion-input>
 ```
-# Componente 5
+# Componente 5 Selección de género
 ```js
       <!-- Selección de género -->
       <ion-list class="spaced-item">
@@ -41,7 +42,7 @@ Este documento describe los componentes principales de la página "Universidad",
         </ion-item>
       </ion-list>
 ```
-# Componente 6 
+# Componente 6 Checkbox de acceso
 ```js
       <!-- Checkbox de acceso -->
       <ion-item class="spaced-item">
@@ -57,7 +58,7 @@ Este documento describe los componentes principales de la página "Universidad",
         <ion-title>Menú</ion-title>
       </ion-toolbar>
 ```
-# Componente 7
+# Componente 7 Sección del menú 
 ```js
       <!-- Tarjeta de Notificaciones -->
 <ion-card class="spaced-item">
@@ -70,7 +71,7 @@ Este documento describe los componentes principales de la página "Universidad",
   </ion-card-content>
 </ion-card>
 ```
-# Componente 8
+# Componente 8 Tarjeta de Notificaciones
 ```js
 <!-- Listado de Mensajes Recientes -->
 <ion-list class="content-subsection spaced-item">
@@ -97,7 +98,7 @@ Este documento describe los componentes principales de la página "Universidad",
   </ion-item>
 </ion-list>
 ```
-# Componente 9
+# Componente 9 Listado de Mensajes Recientes 
 ```js
 
 
@@ -122,7 +123,7 @@ Este documento describe los componentes principales de la página "Universidad",
       </ion-list>
       
 ```
-# Componente 10 
+# Componente 10  Información de materias seleccionable 
 ```js
       <!-- Sección de materias -->
       <ion-header>
