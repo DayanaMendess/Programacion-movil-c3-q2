@@ -1,24 +1,35 @@
-<template>
-  <ion-page>
-    <!-- Encabezado principal -->
-    <ion-header :translucent="true">
-      <ion-toolbar>
-        <ion-title>Universidad</ion-title>
-      </ion-toolbar>
-    </ion-header>
+# Documentación de Componentes en la Aplicación "Universidad"
 
-    <!-- Contenido principal -->
+Este documento describe los componentes principales de la página "Universidad", junto con sus propiedades, propósitos y estilos personalizados.
+
+
+
+## Código Completo de la Página
+
+# Componente 1
+
+```js 
+<!-- Contenido principal -->
     <ion-content :fullscreen="true" class="content-container">
-      
+
+```
+# Componente 2
+ ```js     
       <!-- Barra de búsqueda -->
       <ion-searchbar class="spaced-item" color="primary" placeholder="Buscar"></ion-searchbar>
-
+```
+# Componente 3
+```js
       <!-- Entrada de usuario -->
       <ion-input class="spaced-item" label="Usuario" label-placement="floating" fill="solid" placeholder="Ingrese usuario"></ion-input>
-
+```
+# Componente 4
+```js
       <!-- Entrada de contraseña -->
       <ion-input class="spaced-item" label="Contraseña" label-placement="floating" fill="outline" placeholder="Ingrese contraseña"></ion-input>
-
+```
+# Componente 5
+```js
       <!-- Selección de género -->
       <ion-list class="spaced-item">
         <ion-item>
@@ -29,7 +40,9 @@
           </ion-select>
         </ion-item>
       </ion-list>
-
+```
+# Componente 6 
+```js
       <!-- Checkbox de acceso -->
       <ion-item class="spaced-item">
         <ion-checkbox slot="start" aria-label="Acceder"></ion-checkbox>
@@ -43,7 +56,9 @@
         </ion-buttons>
         <ion-title>Menú</ion-title>
       </ion-toolbar>
-
+```
+# Componente 7
+```js
       <!-- Tarjeta de Notificaciones -->
 <ion-card class="spaced-item">
   <ion-card-header>
@@ -54,7 +69,9 @@
     Recuerda revisar las actividades pendientes para esta semana. Mantente al día con tus asignaciones.
   </ion-card-content>
 </ion-card>
-
+```
+# Componente 8
+```js
 <!-- Listado de Mensajes Recientes -->
 <ion-list class="content-subsection spaced-item">
   <ion-item>
@@ -79,7 +96,9 @@
     </ion-label>
   </ion-item>
 </ion-list>
-
+```
+# Componente 9
+```js
 
 
       <!-- Información de materias (Seleccionable con checkboxes y sin espacio extra) -->
@@ -102,7 +121,9 @@
         </ion-item>
       </ion-list>
       
-
+```
+# Componente 10 
+```js
       <!-- Sección de materias -->
       <ion-header>
         <ion-toolbar>
@@ -132,25 +153,79 @@
     </ion-content>
   </ion-page>
 </template>
+```
 
-<script setup lang="ts">
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButtons, IonMenuButton, IonItem, IonCheckbox, IonLabel, IonInput, IonSearchbar, IonSelect, IonSelectOption, IonList } from '@ionic/vue';
-</script>
+# Componentes CRUD 
 
-<style scoped>
-/* Contenedor principal del contenido */
-.content-container {
-  padding: 200px; /* Espacio general alrededor del contenido */
-}
+```js 
+<!-- Componente CRUD -->
+        <ion-card class="crud-card section">
+          <ion-card-header>
+            <ion-card-title>Gestión de Elementos</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-button @click="createItem" color="success">Crear</ion-button>
+            <ion-button @click="readItem" color="primary">Leer</ion-button>
+            <ion-button @click="updateItem" color="warning">Actualizar</ion-button>
+            <ion-button @click="deleteItem" color="danger">Eliminar</ion-button>
+          </ion-card-content>
+        </ion-card>
+        
+```
+  # componente 2
+```js 
+        <!-- Componente de Formulario de Registro -->
+        <ion-card class="form-card section">
+          <ion-card-header>
+            <ion-card-title>Formulario de Registro</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-input placeholder="Nombre" label="Nombre" label-placement="floating" fill="solid"></ion-input>
+            <ion-input placeholder="Correo" label="Correo" label-placement="floating" fill="solid"></ion-input>
+            <ion-input placeholder="Teléfono" label="Teléfono" label-placement="floating" fill="solid"></ion-input>
+            <ion-button expand="block" color="primary" @click="submitForm">Registrar</ion-button>
+          </ion-card-content>
+        </ion-card>
+  ```
+  # componente 3
+  ```js
+        <!-- Componente de Estadísticas -->
+        <ion-card class="stats-card section">
+          <ion-card-header>
+            <ion-card-title>Estadísticas Generales</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-grid>
+              <ion-row>
+                <ion-col>
+                  <ion-label class="stat-title">Usuarios</ion-label>
+                  <ion-badge color="primary">120</ion-badge>
+                </ion-col>
+                <ion-col>
+                  <ion-label class="stat-title">Materias Activas</ion-label>
+                  <ion-badge color="success">35</ion-badge>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                  <ion-label class="stat-title">Tareas Completadas</ion-label>
+                  <ion-badge color="tertiary">450</ion-badge>
+                </ion-col>
+                <ion-col>
+                  <ion-label class="stat-title">Proyectos</ion-label>
+                  <ion-badge color="warning">5</ion-badge>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-card-content>
+        </ion-card>
+      </ion-content>
+    </ion-page>
+  </template>
 
-/* Clase para agregar espaciado uniforme entre cada elemento */
-.spaced-item {
-  margin-bottom: 16px; /* Espacio uniforme para todos los elementos */
-}
+```
 
-/* Estilo específico para la sección del menú */
-.menu-section {
-  margin-bottom: 16px; /* Espacio reducido para acercar el menú a las siguientes secciones */
-}
 
-</style>
+
+
+

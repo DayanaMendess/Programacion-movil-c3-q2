@@ -1,24 +1,27 @@
-<template>
-  <ion-page>
-    <!-- Encabezado principal -->
-    <ion-header :translucent="true">
-      <ion-toolbar>
-        <ion-title>Universidad</ion-title>
-      </ion-toolbar>
-    </ion-header>
+# Componente 1
 
-    <!-- Contenido principal -->
+```js 
+<!-- Contenido principal -->
     <ion-content :fullscreen="true" class="content-container">
-      
+
+```
+# Componente 2
+ ```js     
       <!-- Barra de búsqueda -->
       <ion-searchbar class="spaced-item" color="primary" placeholder="Buscar"></ion-searchbar>
-
+```
+# Componente 3
+```js
       <!-- Entrada de usuario -->
       <ion-input class="spaced-item" label="Usuario" label-placement="floating" fill="solid" placeholder="Ingrese usuario"></ion-input>
-
+```
+# Componente 4
+```js
       <!-- Entrada de contraseña -->
       <ion-input class="spaced-item" label="Contraseña" label-placement="floating" fill="outline" placeholder="Ingrese contraseña"></ion-input>
-
+```
+# Componente 5
+```js
       <!-- Selección de género -->
       <ion-list class="spaced-item">
         <ion-item>
@@ -29,7 +32,9 @@
           </ion-select>
         </ion-item>
       </ion-list>
-
+```
+# Componente 6 
+```js
       <!-- Checkbox de acceso -->
       <ion-item class="spaced-item">
         <ion-checkbox slot="start" aria-label="Acceder"></ion-checkbox>
@@ -43,7 +48,9 @@
         </ion-buttons>
         <ion-title>Menú</ion-title>
       </ion-toolbar>
-
+```
+# Componente 7
+```js
       <!-- Tarjeta de Notificaciones -->
 <ion-card class="spaced-item">
   <ion-card-header>
@@ -54,7 +61,9 @@
     Recuerda revisar las actividades pendientes para esta semana. Mantente al día con tus asignaciones.
   </ion-card-content>
 </ion-card>
-
+```
+# Componente 8
+```js
 <!-- Listado de Mensajes Recientes -->
 <ion-list class="content-subsection spaced-item">
   <ion-item>
@@ -79,7 +88,9 @@
     </ion-label>
   </ion-item>
 </ion-list>
-
+```
+# Componente 9
+```js
 
 
       <!-- Información de materias (Seleccionable con checkboxes y sin espacio extra) -->
@@ -102,7 +113,9 @@
         </ion-item>
       </ion-list>
       
-
+```
+# Componente 10 
+```js
       <!-- Sección de materias -->
       <ion-header>
         <ion-toolbar>
@@ -132,25 +145,4 @@
     </ion-content>
   </ion-page>
 </template>
-
-<script setup lang="ts">
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButtons, IonMenuButton, IonItem, IonCheckbox, IonLabel, IonInput, IonSearchbar, IonSelect, IonSelectOption, IonList } from '@ionic/vue';
-</script>
-
-<style scoped>
-/* Contenedor principal del contenido */
-.content-container {
-  padding: 200px; /* Espacio general alrededor del contenido */
-}
-
-/* Clase para agregar espaciado uniforme entre cada elemento */
-.spaced-item {
-  margin-bottom: 16px; /* Espacio uniforme para todos los elementos */
-}
-
-/* Estilo específico para la sección del menú */
-.menu-section {
-  margin-bottom: 16px; /* Espacio reducido para acercar el menú a las siguientes secciones */
-}
-
-</style>
+```
